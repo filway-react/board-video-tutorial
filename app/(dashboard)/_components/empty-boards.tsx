@@ -19,13 +19,13 @@ export const EmptyBoards = () => {
       orgId: organization.id,
       title: 'Untitled',
     })
-    .then((id) => {
-      toast.success('Board created')
-      // TODO: Redirect to board/{id}
-    })
-    .catch((error) => {
-      toast.error('Failed to create board')
-    })
+      .then((id) => {
+        toast.success('Board created')
+        // TODO: Redirect to board/{id}
+      })
+      .catch((error) => {
+        toast.error('Failed to create board')
+      })
   }
 
   return (
